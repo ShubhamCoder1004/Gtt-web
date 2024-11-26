@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from wpriverthemes.com/HTML/synck/career.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 16:38:17 GMT -->
+<!-- Mirrored from wpriverthemes.com/HTML/synck/portfolio-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 16:38:38 GMT -->
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -25,20 +25,109 @@
     <link rel="stylesheet"
         href="./maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- ========== End Stylesheet ========== -->
 
+    <style>
+        /*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+        .features .features-item {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+        }
+
+        .features .features-item+.features-item {
+            margin-top: 100px;
+        }
+
+        @media (max-width: 640px) {
+            .features .features-item+.features-item {
+                margin-top: 40px;
+            }
+        }
+
+        .features .features-item h3 {
+            font-weight: 700;
+            font-size: 26px;
+        }
+
+        .features .features-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features .features-item ul li {
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features .features-item ul li:last-child {
+            padding-bottom: 0;
+        }
+
+        .features .features-item ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: var(--accent-color);
+        }
+
+        .features .features-item p:last-child {
+            margin-bottom: 0;
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('assets/imgs/volunteeringbanner.png') center center no-repeat;
+            background-size: cover;
+        }
+
+        .breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 0;
+            margin-bottom: 1rem;
+            list-style: none
+        }
+
+        .breadcrumb-item+.breadcrumb-item {
+            padding-left: .5rem
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            float: left;
+            padding-right: .5rem;
+            color: #6c757d;
+            content: var(--bs-breadcrumb-divider, "/")
+                /* rtl: var(--bs-breadcrumb-divider, "/") */
+        }
+
+        .breadcrumb-item.active {
+            color: #6c757d
+        }
+
+        .fade-in-zoom {
+          animation: fadeInZoom 1s ease-in-out;
+        }
+        .slide-in-left {
+          animation: slideInLeft 1s ease-in-out;
+        }
+        
+    </style>
+
+
 
 </head>
+
+
 
 <body>
 
     <!-- Main -->
-    <main class="main-page career-page">
+    <main class="main-page case-studie-details-page portfolio-details-page">
         <!-- Header Bar -->
-        <!-- <div class="header-bar header-bar-white">
+        <!-- <div class="header-bar">
             <div class="custom-container">
                 <div class="header-bar-body d-flex align-items-center justify-content-between">
                     <div class="left">
@@ -57,7 +146,6 @@
             </div>
         </div> -->
 
-        <!-- Header -->
         <!-- Header -->
         <header class="header-area header-2" style="padding: 0px 0;">
 
@@ -140,15 +228,14 @@
                                             <a href="green-jobs.html">Green Jobs</a>
                                         </li>
                                     </ul> -->
-
                                     <ul class="dropdown-menu">
-                                      
-                                    
+
+
                                         <li>
-                                            <a href="digital-support.html"  >Career Development</a>
+                                            <a href="digital-support.html">Career Development</a>
                                         </li>
                                         <li>
-                                            <a href="ANKUR.html" style="color: #e8131a;">Ankur</a>
+                                            <a href="ANKUR.html">Ankur</a>
                                         </li>
                                         <li>
                                             <a href="green-jobs.html">Green Ways</a>
@@ -157,13 +244,13 @@
                                             <a href="partnership-with-wechimni.html">We Chimney</a>
                                         </li>
                                         <li>
-                                            <a href="Networking.html">Networking</a>
+                                            <a href="Networking .html" style="color: #e8131a;">Networking</a>
                                         </li>
                                         <li>
                                             <a href="partnership-with-barclays.html">Barclays</a>
                                         </li>
                                         <li>
-                                            <a href="swades.html">Swades</a>
+                                            <a href="Swades.html">Swades</a>
                                         </li>
                                         <li>
                                             <a href="partnership-with-atos-syntel.html">Atos</a>
@@ -196,8 +283,7 @@
             </div>
 
         </header>
-
-        <section class="hero-service-wrap hero-section-wrap hero-about-wrap">
+        <!-- <section class="hero-service-wrap hero-section-wrap hero-about-wrap">
             <div class="hero-section-content-wrap"
                 style="padding-top: 140px; padding-bottom: 0px; text-align: center;">
                 <h5 class="section-subtitle"
@@ -205,48 +291,118 @@
                                 GTT Foundation
                             </h5>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Service -->
-        <section class="company-service-area career-service-area" style="padding-top: 20px;">
-            <div class="custom-container">
-                <div class="hero-service-about">
-                    <img src="assets/imgs/skilldev.jpg" alt="Service About" />
-                    <div class="hero-service-about-body">
-                        <h5 style="color: red;">Empowering Women for Sustainable Livelihoods</h5>
-                        <p style="text-align: justify;">Empowering women for sustainable livelihoods is a transformative journey that combines education, skill development, and access to vital resources like microfinance. By nurturing networks, championing eco-friendly practices, and advocating for gender equality, we unlock women’s potential, fostering resilient communities and cultivating a sustainable future where all can thrive.</p>
+        <!-- Portfolio Details Content -->
+        <!-- Page Header Start -->
+        <div style="margin-top: 100px !important;  padding-top: 6rem;
+  padding-bottom: 6rem;" class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <h1 style="font-weight: 700;" class="display-4 text-white animated slideInDown mb-4">Vision & Mission
+                </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                        <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                        <li class="breadcrumb-item text-primary active" aria-current="page">Vision & Mission</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
 
+        <!-- Vision & Mission -->
+        <section id="features" class="features section" style="    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 1px 0;
+    scroll-margin-top: 98px;
+    overflow: clip;">
 
-                        <h5 style="color: red;">Pathway to Success</h5>
-                        <p style="text-align: justify;">At the heart of our initiatives lies a commitment to placing women at the center of our
-                            programs. We commence by deeply understanding their aspirations, assessing their existing
-                            skills, and recognizing the social and cultural contexts that shape their lives, along with
-                            the barriers that impede their journey toward dignified self-reliance..</p>
+            <!-- Vision & Mission  -->
+            <div class="container section-title" style="    text-align: center;
+        padding-bottom: 1px;
+        position: relative;
+        padding-top: 1px;" data-aos="fade-up">
+                <h2>Vision & Mission </h2>
+            </div>
 
+            <div class="container">
 
-
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-md-5 d-flex align-items-center fade-in-zoom" data-aos="zoom-out" data-aos-delay="100">
+                        <img src="assets/imgs/employmentOpp.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 slide-in-left" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Ankur Programme.</h3>
+                        <p class="fst-italic">
+                            The Ankur Programme empowers women from marginalized communities through a Sustainable Lifestyle Program, providing training in eco-friendly fashion production. It helps them become self-sufficient entrepreneurs, contributing to sustainable and inclusive economic development in Gujarat and Maharashtra.
+                        </p>
                         <ul>
-                            <li>
-                                <i class="las la-check"></i> Expert team.
-                            </li>
-                            <li>
-                                <i class="las la-check"></i> Women-centered approach.
-                            </li>
-                            <li>
-                                <i class="las la-check"></i> Empowering self-reliance.
-                            </li>
+                            <li><i class="bi bi-check"></i><span><b>Empowering Women</b>: Provide training to women from marginalized communities.</span></li>
+                            <li><i class="bi bi-check"></i><span><b>Eco-Friendly Production</b>: Teach sustainable and eco-friendly fashion production techniques.</span></li>
+                            <li><i class="bi bi-check"></i><span><b>Entrepreneurship</b>: Help women become self-sufficient entrepreneurs.</span></li>
                         </ul>
                     </div>
+                </div><!-- Features Item -->
+
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-md-5 order-1 order-md-2 d-flex align-items-center slide-in-left" data-aos="zoom-out"
+                        data-aos-delay="200">
+                        <img src="assets/imgs/employmentOpp.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 order-2 order-md-1 fade-in-zoom" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Barclays LifeSkills Programme</h3>
+                        <p class="fst-italic">GTT Foundation is a partner for the Barclays LifeSkills Programme, supporting those facing challenges to be equipped with skills and provide them with avenues for employment. The focus is on individuals with limited access to formal skills and social capital. GTT Foundation has been partnering with Barclays since 2016 on the LifeSkills programme to support people from the community with relevant work-ready skills.</p>
+                <p class="fst-italic">We have trained, placed, and mentored hundreds and thousands of people into work across the country, collaborating with more than 3000 colleges and academic institutions, while continuing to work with communities to provide them with employment opportunities.</p>
+        
+                <ul>
+                    <li><i class="bi bi-check"></i><span><b>Skills Development</b>: Providing relevant work-ready skills to those in need.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Training and Placement</b>: Training and placing individuals across the country.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Collaboration with Institutions</b>: Partnering with 3000+ colleges to facilitate employment.</span></li>
+                </ul>
+                    </div>
+                </div><!-- Features Item -->
 
 
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-md-5 d-flex align-items-center slide-in-left" data-aos="zoom-out" data-aos-delay="100">
+                        <img src="assets/imgs/employmentOpp.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 fade-in-zoom" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Partnership with Swades Foundation</h3>
+                <p class="fst-italic">GTT Foundation partners with Swades Foundation to support the skilling and employment needs of the youth in colleges in the districts of Raigad and Nashik in Maharashtra. Employability of the community is an integral part of its holistic 360-degree development approach. GTT Foundation engages with the youth from the time they enter college and continues the employability interventions until they are placed into work.</p>
+                <ul>
+                    <li><i class="bi bi-check"></i><span><b>Holistic Development</b>: Engaging youth in colleges and providing ongoing employability support.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Skilling and Employment</b>: Focus on skill development and job placements.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Partnership Impact</b>: Helping youth in Raigad and Nashik become employable and succeed in their careers.</span></li>
+                </ul>
+                    </div>
+                </div><!-- Features Item -->
 
-                </div>
+                <div class="row gy-4 align-items-center features-item">
+                    <div class="col-md-5 order-1 order-md-2 d-flex align-items-center slide-in-left" data-aos="zoom-out"
+                        data-aos-delay="200">
+                        <img src="assets/imgs/employmentOpp.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 order-2 order-md-1 fade-in-zoom" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Partnership with ATOS Syntel</h3>
+                <p class="fst-italic">The programme is aimed at uplifting students through impactful training programs that ensure they are placement-ready. Our mission is to empower students from Maharashtra and Tamil Nadu with the requisite skills to be part of the BFSI, IT/ITES, and HC industries, ensuring their success in today’s dynamic job market and paving the way for bright futures.</p>
+                <ul>
+                    <li><i class="bi bi-check"></i><span><b>Placement-Ready Training</b>: Providing students with the skills necessary for placement in key industries.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Industry Focus</b>: Preparing students for careers in BFSI, IT/ITES, and HC industries.</span></li>
+                    <li><i class="bi bi-check"></i><span><b>Empowerment and Success</b>: Empowering students to succeed in today’s competitive job market.</span></li>
+                </ul>
+                    </div>
+                </div><!-- Features Item -->
             </div>
-        </section>
+
+        </section><!-- /Features Section -->
+
 
 
 
         <!-- Footer -->
+
         <footer class="footer-area" style="padding-top: 0px;">
             <img src="assets/imgs/bg-shape-4.svg" alt="Shape" class="animation-slide-right bg-shape" />
 
@@ -358,11 +514,18 @@
                             </div>
                             <div class="footer-contact-info-item" style="    margin-top: 5px;">
                                 <h4 style="margin-bottom: 11px;">Address</h4>
+                                <!-- <p style="line-height: 20px !important; font-size: 12px; cursor: pointer;">
+										<a style="line-height: 20px !important;">
+											Safire Park, Old Mumbai - Pune Hwy, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005
+										</a>
+									</p> -->
+
+
                                 <p style="line-height: 20px !important; font-size: 12px; cursor: pointer;">
-                                    <a style="line-height: 20px !important;">
-                                        Safire Park, Old Mumbai - Pune Hwy, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005
-                                    </a>
-                                </p>
+										<a style="line-height: 20px !important;">
+											Safire Park, Old Mumbai - Pune Hwy, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005
+										</a>
+									</p>
                             </div>
                         </div>
                     </div>
@@ -400,6 +563,6 @@
 </body>
 
 
-<!-- Mirrored from wpriverthemes.com/HTML/synck/career.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 16:38:20 GMT -->
+<!-- Mirrored from wpriverthemes.com/HTML/synck/portfolio-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Aug 2024 16:38:39 GMT -->
 
 </html>

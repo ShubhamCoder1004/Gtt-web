@@ -2963,7 +2963,7 @@
     .our-team-area .section-header,
     .our-team-box {
         position: relative;
-        top: 0;
+        top: 0 !important;
     }
 
     .portfolio-footer {
