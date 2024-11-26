@@ -4452,16 +4452,34 @@ img {
 }
 
 
+
 @keyframes news2_anim {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-70%); 
+        transform: translateX(-180%); 
     }
 }
 
-
+@media (max-width: 500px) {
+    .news2-lists {
+        justify-content: center; /* Center the items on mobile screens */
+    }
+ 
+    .news2-card {
+        flex: 1 1 100%; /* 1 item per row */
+    }
+ 
+    @keyframes news2_anim {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-300%); /* Adjusted for mobile */
+        }
+    }
+}
 
 /* @keyframes news2_anim {
     0% {
